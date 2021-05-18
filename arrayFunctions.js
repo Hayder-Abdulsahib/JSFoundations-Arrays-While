@@ -104,7 +104,3 @@ module.exports = {
   secondHalfOfArrayIfItIsEven,
   youGottaCalmDown,
 };
-
-// let number = ["apple", "orange", "banana", "kiwi", "blueberry", "blueberry", "hi"]
-// console.log(secondHalfOfArrayIfItIsEven(number));
-console.log(youGottaCalmDown("Taylo"));
