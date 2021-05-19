@@ -52,8 +52,8 @@ function addLailaToArray(instructors) {
  * eliminateTeam(["Brazil", "Germany", "Italy"]) -> "Italy"
  */
 function eliminateTeam(teams) {
-  const lastElement = teams.pop();
-  return lastElement
+
+  return teams.pop();
 }
 
 /**
@@ -88,12 +88,18 @@ function secondHalfOfArrayIfItIsEven(fruits) {
  * - Use string method .endsWith()
  */
 function youGottaCalmDown(shout) {
+  //another solution
 
-  if (shout.endsWith('!')) {
-    let newString = shout.slice(0, shout.indexOf("!") + 1);
-    return newString;
+  // if (shout.endsWith('!')) {
+  //   let newString = shout.slice(0, shout.indexOf("!") + 1);
+  //   return newString;
+  // }
+  // else return shout;
+
+  while (shout.endsWith("!!")) {
+    shout = shout.slice(0, -1);
   }
-  else return shout;
+  return shout;
 }
 
 module.exports = {
